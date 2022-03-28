@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="491.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.biblioteca.AbonatView">
+   <children>
+      <TableView layoutX="60.0" layoutY="46.0" prefHeight="412.0" prefWidth="343.0">
+        <columns>
+          <TableColumn prefWidth="126.40002822875977" text="cod" />
+          <TableColumn prefWidth="94.39994812011719" text="titlu" />
+            <TableColumn prefWidth="120.800048828125" text="autor" />
+        </columns>
+      </TableView>
+      <TextField layoutX="503.0" layoutY="55.0" />
+      <TextField layoutX="503.0" layoutY="128.0" />
+      <TextField layoutX="503.0" layoutY="196.0" />
+      <Label layoutX="427.0" layoutY="59.0" text="Cod carte" />
+      <Label layoutX="428.0" layoutY="132.0" text="Titlu carte" />
+      <Label layoutX="424.0" layoutY="200.0" text="Autor carte" />
+      <Button layoutX="737.0" layoutY="101.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="121.0" text="Imprumuta" />
+      <TableView layoutX="461.0" layoutY="252.0" prefHeight="158.0" prefWidth="414.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Cod" />
+          <TableColumn prefWidth="100.0" text="Titlu" />
+            <TableColumn prefWidth="108.79998779296875" text="Autor" />
+            <TableColumn prefWidth="128.800048828125" text="Data imprumut" />
+        </columns>
+      </TableView>
+      <Button layoutX="806.0" layoutY="422.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="80.0" text="LOGOUT" />
+   </children>
+</AnchorPane>
