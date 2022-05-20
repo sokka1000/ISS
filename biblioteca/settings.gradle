@@ -1,0 +1,8 @@
+rootProject.name = 'biblioteca'
+include 'BibliotecaClientFX'
+include 'BibliotecaModel'
+include 'BibliotecaNetworking'
+include 'BibliotecaPersistence'
+include 'BibliotecaServer'
+include 'BibliotecaServices'
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="404.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AbonatController">
+    <children>
+        <TableView fx:id="tabelCartiDisponibile" layoutX="27.0" layoutY="25.0" onMouseClicked="#selectCarte" prefHeight="357.0" prefWidth="310.0">
+            <columns>
+                <TableColumn prefWidth="75.0" text="Carti Disponibile">
+                    <columns>
+                        <TableColumn fx:id="tableColumnTOATECodCarte" prefWidth="60.0" text="Cod">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="id" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="tableColumnTOATETitlu" prefWidth="150.0" text="Titlu">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="titlu" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="tableColumnTOATEAutor" prefWidth="100.0" text="Autor">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="autor" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <TableView fx:id="tabelCartiImprumutate" layoutX="369.0" layoutY="151.0" prefHeight="198.0" prefWidth="431.0">
+            <columns>
+                <TableColumn prefWidth="350.0" text="Carti Imprumutate">
+                    <columns>
+                        <TableColumn fx:id="tableColumnCodCarteImprumutate" prefWidth="60.0" text="Cod">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="id" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="tableColumnTitluImprumutate" prefWidth="150.0" text="Titlu">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="titlu" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="tableColumnAutorImprumutate" prefWidth="100.0" text="Autor">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="autor" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="tableColumnDataImprumut" prefWidth="130.0" text="Data imprumut">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="dataImprumut" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <Button fx:id="buttonImprumuta" layoutX="661.0" layoutY="59.0" mnemonicParsing="false" onMouseClicked="#imprumutaCarte" prefHeight="47.0" prefWidth="107.0" text="Imprumuta" />
+        <TextField fx:id="textFieldCodCarte" disable="true" layoutX="467.0" layoutY="25.0" />
+        <Label layoutX="403.0" layoutY="29.0" text="Cod carte:" />
+        <TextField fx:id="textFieldTitlu" layoutX="467.0" layoutY="70.0" />
+        <Label layoutX="402.0" layoutY="74.0" text="Titlu carte:" />
+        <TextField fx:id="textFieldAutor" layoutX="467.0" layoutY="113.0" />
+        <Label layoutX="403.0" layoutY="117.0" text="Autor:" />
+        <Button layoutX="735.0" onMouseClicked="#logoutHandler" layoutY="357.0" mnemonicParsing="false" text="LOG OUT" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+tasks.register("prepareKotlinBuildScriptModel"){}
+dependencies {
+
+
+    implementation  project (':BibliotecaModel')
+    implementation  project (':BibliotecaServices')
+
+    implementation 'org.springframework:spring-context:5.0.4.RELEASE'
+}
+
+javafx {
+    version = "16"
+    modules = [ 'javafx.controls' , 'javafx.fxml']
+}
+
+mainClassName='StartClientFX'

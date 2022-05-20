@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="396.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BibliotecarController">
+    <children>
+        <TableView fx:id="tabelCarti" layoutX="25.0" layoutY="30.0" onMouseClicked="#selectCarte" prefHeight="220.0" prefWidth="387.0">
+            <columns>
+                <TableColumn prefWidth="75.0" text="Carti biblioteca">
+                    <columns>
+                        <TableColumn fx:id="tableColumnCodCarte" prefWidth="60.0" text="Cod">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="id" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="tableColumnTitlu" prefWidth="150.0" text="Titlu">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="titlu" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="tableColumnAutor" prefWidth="100.0" text="Autor">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="autor" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="tableColumnStareCarte" prefWidth="75.0" text="Disponibila">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="disponibila" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <TextField fx:id="textFdCodCarte" disable="true" layoutX="527.0" layoutY="53.0" />
+        <Label layoutX="446.0" layoutY="57.0" text="Cod carte:" />
+        <TextField fx:id="textFdTitlu" layoutX="527.0" layoutY="98.0" />
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+        <Label layoutX="446.0" layoutY="102.0" text="Titlu carte:" />
+        <TextField fx:id="textFdAutor" layoutX="527.0" layoutY="141.0" />
+        <Label layoutX="446.0" layoutY="145.0" text="Autor:" />
+        <Button fx:id="buttonAdauga" layoutX="463.0" layoutY="203.0" mnemonicParsing="false" onMouseClicked="#adaugaCarte" text="Adauga" />
+        <Button fx:id="buttonModifica" layoutX="537.0" layoutY="203.0" mnemonicParsing="false" onMouseClicked="#modificaCarte" text="Modifica" />
+        <Button fx:id="buttonSterge" layoutX="619.0" layoutY="203.0" mnemonicParsing="false" onMouseClicked="#stergeCarte" text="Sterge" />
+        <TextField fx:id="textFdCodCarteRestituire" layoutX="145.0" layoutY="276.0" />
+        <Label layoutX="73.0" layoutY="280.0" text="Cod carte:" />
+        <TextField fx:id="textFdUsernameAbonatRestituire" layoutX="145.0" layoutY="321.0" />
+        <Label layoutX="25.0" layoutY="325.0" text="Username ABONAT:" />
+        <Button fx:id="buttonReturneaza" layoutX="320.0" layoutY="289.0" mnemonicParsing="false" onMouseClicked="#returneazaCarte" prefHeight="38.0" prefWidth="79.0" text="Returneaza" />
+        <Button fx:id="buttonLogout" layoutX="591.0" layoutY="289.0" onMouseClicked="#logoutHandler" mnemonicParsing="false" prefHeight="38.0" prefWidth="79.0" text="LOG OUT" />
+    </children>
+</AnchorPane>

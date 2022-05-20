@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="330.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+    <children>
+        <TextField fx:id="usernameField" layoutX="149.0" layoutY="128.0" />
+        <PasswordField fx:id="passwdField" layoutX="149.0" layoutY="179.0" />
+        <Button fx:id="buttonLogIn" layoutX="149.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="25.0" prefWidth="149.0" text="Autentificare" />
+        <Label layoutX="77.0" layoutY="132.0" prefHeight="17.0" prefWidth="72.0" text="Username:" />
+        <Label layoutX="77.0" layoutY="183.0" prefHeight="17.0" prefWidth="49.0" text="Parola:" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="149.0" layoutY="44.0" prefHeight="40.0" prefWidth="149.0" text="BINE AI VENIT!" />
+    </children>
+</AnchorPane>

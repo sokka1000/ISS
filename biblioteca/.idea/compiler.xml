@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="biblioteca" />
-      </profile>
-    </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="biblioteca" target="17" />
+    <bytecodeTargetLevel target="16">
+      <module name="BibliotecaClientFX" target="17" />
+      <module name="BibliotecaClientFX.main" target="17" />
+      <module name="BibliotecaClientFX.test" target="17" />
+      <module name="BibliotecaModel" target="16" />
+      <module name="BibliotecaModel.main" target="16" />
+      <module name="BibliotecaModel.test" target="16" />
+      <module name="BibliotecaNetworking" target="17" />
+      <module name="BibliotecaNetworking.main" target="17" />
+      <module name="BibliotecaNetworking.test" target="17" />
+      <module name="BibliotecaPersistence" target="17" />
+      <module name="BibliotecaPersistence.main" target="17" />
+      <module name="BibliotecaPersistence.test" target="17" />
+      <module name="BibliotecaServer" target="17" />
+      <module name="BibliotecaServer.main" target="17" />
+      <module name="BibliotecaServer.test" target="17" />
+      <module name="BibliotecaServices" target="17" />
+      <module name="BibliotecaServices.main" target="17" />
+      <module name="BibliotecaServices.test" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
